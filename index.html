@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VacationOnline</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- Topbar -->
+<header class="topbar">
+  <div class="topbar-container">
+    <div class="top-left">Secure Reservation | City Name</div>
+    <div class="top-right">
+      <a href="#">My Account</a> 
+      <a href="#">My Trips</a> 
+      <a href="#">Customer Care</a>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+  </div>
+</header>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Vacation<span>Online</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Flights</a></li>
+      <li><a href="#">Hotels</a></li>
+      <li><a href="#">Cars</a></li>
+      <li><a href="#">Cruises</a></li>
+      <li><a href="#">Packages</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Activities</a></li>
+      <li><a href="#">Last Minute</a></li>
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-overlay">
+    <h1>Peace of mind</h1>
+    <p>Find your hotel, fast and easy</p>
+    <div class="booking-form">
+      <input type="date">
+      <input type="date">
+      <select><option>1 Room</option></select>
+      <select><option>2 Adults</option></select>
+      <select><option>3 Children</option></select>
+      <button>Find Rooms</button>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+  <div class="newsletter-content">
+    <div class="left">
+      <p>📧 Stay Connected!</p>
+      <input type="email" placeholder="Your Email Address">
+      <button>Subscribe</button>
+    </div>
+    <div class="right">
+      <p><i class="fa-solid fa-shield-halved"></i> Best Rate Certified</p>
+    </div>
+  </div>
+</section>
+
+<!-- Top Deals -->
+<section class="deals">
+  <h2>Today's Top Deals</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="cruise.jpg" alt="">
+      <h4>Caribbean Cruise</h4>
+      <p>Luxury and comfort on water.</p>
+    </div>
+    <div class="card">
+      <img src="island.jpg" alt="">
+      <h4>Island Flights</h4>
+      <p>Direct flights to paradise.</p>
+    </div>
+    <div class="card">
+      <img src="resort.jpg" alt="">
+      <h4>Beach Resorts</h4>
+      <p>All-inclusive exotic stays.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Why Book With Us -->
+<section class="why">
+  <h2>Why Book With Us</h2>
+  <p>Trusted by thousands. Hassle-free booking, guaranteed rates, and 24/7 support to ensure your trip is smooth and secure.</p>
+  <button>Read More</button>
+</section>
+
+<!-- Recommended -->
+<section class="recommended">
+  <h2>Recommended for You</h2>
+  <div class="cards">
+    <div class="card"><img src="family.webp" alt=""><p>Family Cruises</p></div>
+    <div class="card"><img src="escapes.jpg" alt=""><p>Romantic Escapes</p></div>
+    <div class="card"><img src="roadtrip.jpg" alt=""><p>Road Trips</p></div>
+  </div>
+</section>
+
+<!-- Top Destinations -->
+<section class="destinations">
+  <h2>Top Destinations</h2>
+  <div class="dest-cards">
+    <div class="dest-card">
+      <img src="paris.jpg" alt="Paris">
+      <div class="card-content">
+        <h3>Paris</h3>
+        <p>The city of love, culture, and lights.</p>
+        <button>Travel Now</button>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="maldives.jpg" alt="Maldives">
+      <div class="card-content">
+        <h3>Maldives</h3>
+        <p>Crystal-clear waters and luxurious resorts.</p>
+        <button>Travel Now</button>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="london.jpg" alt="London">
+      <div class="card-content">
+        <h3>London</h3>
+        <p>Explore history and modern life together.</p>
+        <button>Travel Now</button>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="Santorini.jpg" alt="Santorini">
+      <div class="card-content">
+        <h3>Santorini</h3>
+        <p>Stunning sunsets and blue-domed beauty.</p>
+        <button>Travel Now</button>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="Tokyo.jpg" alt="Tokyo">
+      <div class="card-content">
+        <h3>Tokyo</h3>
+        <p>Technology meets tradition in Japan’s capital.</p>
+        <button>Travel Now</button>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="Seoul.jpg" alt="Seoul">
+      <div class="card-content">
+        <h3>Seoul</h3>
+        <p>A vibrant city of pop culture and street food.</p>
+        <button>Travel Now</button>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="Venice.jpg" alt="Venice">
+      <div class="card-content">
+        <h3>Venice</h3>
+        <p>Charming canals and romantic gondolas.</p>
+        <button>Travel Now</button>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="Los Angeles.jpg" alt="Los Angeles">
+      <div class="card-content">
+        <h3>Los Angeles</h3>
+        <p>Hollywood glamour and golden beaches.</p>
+        <button>Travel Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map -->
+<section class="map">
+  <img src="mapimage.png" alt="Map Image">
+  <h3>Featured Destination: New York</h3>
+  <ul>
+    <li>✔ Incredible hotel discounts</li>
+    <li>✔ Flight & car deals</li>
+    <li>✔ Cruise packages available</li>
+  </ul>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="logo">VacationOnline</div>
+    <div class="subscribe">
+      <p>Never Miss a Deal!</p>
+      <input type="email" placeholder="Your Email">
+      <button>Submit</button>
+    </div>
+  </div>
+  <p>&copy; 2009–2025 VacationOnline. All Rights Reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
